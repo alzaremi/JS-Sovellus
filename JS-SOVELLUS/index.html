@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <title>Movie Info App</title>
+  <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+  <header>
+    <h1 id="header">Movie Info App</h1>
+  </header>
+
+<div class="search-wrapper" data-aos="fade-up">
+    <section id="search-section">
+      <label for="search">Search Movie:</label>
+      <input type="text" id="search" placeholder="Type a movie title"><br>
+      <button id="searchBtn">Search</button>
+    </section>
+</div>
+
+    <section id="movies-container"></section>
+
+    <section id="previous-container" class="previous-row"></section>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script> AOS.init(); </script>
+  <script src="script.js"></script>
+</body>
+</html>
